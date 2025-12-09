@@ -1,6 +1,6 @@
-export function GET(request) {
+export function GET() {
+  const apiKey = process.env.BOOKID;
   return Response.json({
-    message: "Hello from Next.js API Route!",
-    timestamp: Date.now(),
+    key: apiKey,
   });
 }
